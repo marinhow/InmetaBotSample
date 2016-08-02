@@ -1,6 +1,7 @@
 ﻿using Microsoft.Bot.Builder.FormFlow;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 #pragma warning disable 649
 
 // The SandwichOrder is the simple form you want to fill out.  It must be serializable so the bot can be stateless.
@@ -9,31 +10,43 @@ using System.Collections.Generic;
 // in a conversation.
 namespace InmetaBotSample
 {
-    public enum SandwichOptions
+    public enum PizzaOptions
     {
-        BLT, BlackForestHam, BuffaloChicken, ChickenAndBaconRanchMelt, ColdCutCombo, MeatballMarinara,
-        OvenRoastedChicken, RoastBeef, RotisserieStyleChicken, SpicyItalian, SteakAndCheese, SweetOnionTeriyaki, Tuna,
-        TurkeyBreast, Veggie
+      DEN_ENKLE,KVESS,DRØMMEN,PIZZABAKEREN_SPESIAL,SNADDER,MIX,MEKSIKANEREN,BIFFEN,DEN_MARINERTE,
+      PEPPERSVENNEN,FLAMMEN,TACOKYLLINGEN,KOKKENS_KYLLING,KOKKENS_FAVORITT,GNISTEN,LUKSUSKYLLING,
+      KYLLINGFARMEN,VEGETARIANEREN,KEBABEN,DRENGEN,MR_X,CHORIZO_SPESIAL,DOBBELDEKKER,HEIT_KYLLING,
+      CHORIZOEN,HOTTENTOTTEN
     };
-    public enum LengthOptions { SixInch, FootLong };
+    public enum LengthOptions {[Description("20 cm")]small, [Description("30 cm")]medium, [Description("40 cm")]large};
     public enum BreadOptions { NineGrainWheat, NineGrainHoneyOat, Italian, ItalianHerbsAndCheese, Flatbread };
     public enum CheeseOptions { American, MontereyCheddar, Pepperjack };
     public enum ToppingOptions
     {
-        Avocado, BananaPeppers, Cucumbers, GreenBellPeppers, Jalapenos,
+        Avocado, Cucumbers, Jalapenos,
         Lettuce, Olives, Pickles, RedOnion, Spinach, Tomatoes
     };
     public enum SauceOptions
     {
-        ChipotleSouthwest, HoneyMustard, LightMayonnaise, RegularMayonnaise,
-        Mustard, Oil, Pepper, Ranch, SweetOnion, Vinegar
+        Garlic, HoneyMustard, Mayonnaise,
+        Mustard, Oil, Pepper
     };
+
+    //public class GetCustomDataFromXML
+    //{
+    //    public GetCustomDataFromXML()
+    //    {
+    //        Dictionary<int, string> Options1 = new Dictionary<int, string>();
+    //        Options1.Add(1, "limao");
+
+    //        PizzaOptions = Options1;
+    //    }
+    //}
 
     [Serializable]
     public class SandwichOrder
     {
-        public SandwichOptions? Sandwich;
-        public LengthOptions? Length;
+        public PizzaOptions? Pizza;
+        public LengthOptions? Size;
         public BreadOptions? Bread;
         public CheeseOptions? Cheese;
         public List<ToppingOptions> Toppings;
@@ -41,11 +54,8 @@ namespace InmetaBotSample
 
         public static IForm<SandwichOrder> BuildForm()
         {
-            CustomConfigurationReader ccr = new CustomConfigurationReader();
-            ccr.LoadConfig();
-
             return new FormBuilder<SandwichOrder>()
-                    .Message("Welcome to the simple sandwich order bot!")
+                    .Message("Welcome to the PIZZABAKEREN order bot!")
                     .Build();
         }
     };
