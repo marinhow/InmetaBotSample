@@ -21,6 +21,7 @@ namespace InmetaBotSample
         {
             if (System.IO.File.Exists(m_sConfigFileName))
             {
+
                 System.IO.StreamReader srReader = System.IO.File.OpenText(m_sConfigFileName);
                 Type tType = m_oConfig.GetType();
                 System.Xml.Serialization.XmlSerializer xsSerializer = new System.Xml.Serialization.XmlSerializer(tType);
