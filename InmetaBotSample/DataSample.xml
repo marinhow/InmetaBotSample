@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DemoName>PIZZABAKEREN</DemoName>
+  <MainMenuItems>
+    <ItemsName>PizzaName</ItemsName>
+    <items>
+      <Item>01 DEN ENKLE</Item>
+      <Item>02 KVESS</Item>
+      <Item>03 DRØMMEN</Item>
+      <Item>04 PIZZABAKEREN SPESIAL</Item>
+      <Item>05 SNADDER</Item>
+      <Item>06 MIX</Item>
+      <Item>07 MEKSIKANEREN</Item>
+      <Item>08 BIFFEN</Item>
+      <Item>09 DEN MARINERTE</Item>
+      <Item>10 PEPPERSVENNEN</Item>
+      <Item>11 FLAMMEN</Item>
+      <Item>12 TACOKYLLINGEN</Item>
+      <Item>13 KOKKENS KYLLING</Item>
+      <Item>14 KOKKENS FAVORITT</Item>
+      <Item>15 GNISTEN</Item>
+      <Item>16 LUKSUSKYLLING</Item>
+      <Item>17 KYLLINGFARMEN</Item>
+      <Item>18 VEGETARIANEREN</Item>
+      <Item>19 KEBABEN</Item>
+      <Item>20 DRENGEN</Item>
+      <Item>21 MR.X</Item>
+      <Item>22 CHORIZO SPESIAL</Item>
+      <Item>23 DOBBELDEKKER</Item>
+      <Item>24 HEIT KYLLING</Item>
+      <Item>25 CHORIZOEN</Item>
+      <Item>28 HOTTENTOTTEN</Item>
+    </items>
+  </MainMenuItems>
+  <Options1>
+    <Options1Name>LengthOptions</Options1Name>
+    <items>
+      <Item>20 cm</Item>
+      <Item>30 cm</Item>
+      <Item>40 cm</Item>
+    </items>
+  </Options1>
+  <Options2>
+    <Options2Name>BreadOptions</Options2Name>
+    <items>
+      <Item>NineGrainWheat</Item>
+      <Item>NineGrainHoneyOat</Item>
+      <Item>Italian</Item>
+      <Item>ItalianHerbsAndCheese</Item>
+      <Item>Flatbread</Item>
+    </items>
+  </Options2>
+  <Options3>
+    <Options3Name>CheeseOptions</Options3Name>
+    <items>
+      <Item>American</Item>
+      <Item>MontereyCheddar</Item>
+      <Item>Pepperjack</Item>
+    </items>
+  </Options3>
+  <Options4>
+    <Options4Name>ToppingOptions</Options4Name>
+    <items>
+      <Item>Avocado</Item>
+      <Item>Cucumbers</Item>
+      <Item>GreenBellPeppers</Item>
+      <Item>Jalapenos</Item>
+      <Item>Lettuce</Item>
+      <Item>Olives</Item>
+      <Item>Pickles</Item>
+      <Item>RedOnion</Item>
+      <Item>Spinach</Item>
+      <Item>Tomatoes</Item>
+    </items>
+  </Options4>
+  <Options5>
+    <Options5Name>SauceOptions</Options5Name>
+    <items>
+      <Item>HoneyMustard</Item>
+      <Item>LightMayonnaise</Item>
+      <Item>GreenBellPeppers</Item>
+      <Item>RegularMayonnaise</Item>
+      <Item>Mustard</Item>
+      <Item>Oil</Item>
+      <Item>Pepper</Item>
+      <Item>Vinegar</Item>
+      <Item>Garlic</Item>
+    </items>
+  </Options5>
+</Data>
